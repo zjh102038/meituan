@@ -11,28 +11,102 @@
     <script src="./scripts/swiper.min.js"></script>
     <script src="./scripts/zepto.min.js"></script>
     <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>美团</title>
 </head>
 
 <body>
     <div class="box">
-        <header class="header"></header>
+        <header class="header">
+            <p>
+                北京
+                <span class="icon iconfont icon-xiangxia"></span>
+            </p>
+            <div class="search">
+                <span class="icon iconfont icon-fangdajing"></span>
+                <input type="text" placeholder="输入商家/品类/商圈" class="ipt">
+            </div>
+            <dl>
+                <dt class="icon iconfont icon-icongerenzhongxin-01"></dt>
+                <dd>我的</dd>
+            </dl>
+        </header>
         <banner class="banner">
             <img src="./images/0.png" alt="">
         </banner>
-        <main class="main">
+        <!-- <main class="main">
             <section class="swipers">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide first-slide"></div>
-                        <div class="swiper-slide second-slide"></div>
+                        <div class="swiper-slide first-slide">
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche-xuanzhong"></dt>
+                                <dd>美食</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-wode-xuanzhong"></dt>
+                                <dd>猫眼电影</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche"></dt>
+                                <dd>酒店</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-wode"></dt>
+                                <dd>休闲娱乐</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche-xuanzhong"></dt>
+                                <dd>外卖</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche-xuanzhong"></dt>
+                                <dd>ktv</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-shouye"></dt>
+                                <dd>周边游</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche-xuanzhong"></dt>
+                                <dd>丽人</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-dazhongdianping"></dt>
+                                <dd>小吃快餐</dd>
+                            </dl>
+                            <dl>
+                                <dt class="icon iconfont icon-gouwuche-xuanzhong"></dt>
+                                <dd>火车票</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide second-slide">
+                            12
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section class="product"></section>
-        </main>
+            <section class="product">
+                <h4>猜你喜欢</h4>
+                <dl>
+                    <dt><img src="./images/1.png" alt=""></dt>
+                    <dd>
+                        <h6>华莱士</h6>
+                        <span>[15店通用]鸡腿堡+薯条+中杯可乐1份</span>
+                        <p><span>13元<b>门市价 31元</b></span><span>已售4321</span></p>
+                    </dd>
+                </dl>
+            </section>
+        </main> -->
     </div>
+    <script>
+        var swipers = new Swiper('.swiper-container', {
+            pagination: {
+                clickable: true
+            }
+        })
+    </script>
 </body>
 
 </html>

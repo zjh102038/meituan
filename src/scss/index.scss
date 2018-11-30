@@ -6,7 +6,112 @@ body {
     height: 100%;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .box {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: pxTorem(44px);
+        padding: 0 pxTorem(10px);
+        background: darkcyan;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: pxTorem(14px);
+        .search {
+            width: 75%;
+            height: 75%;
+            background: rgb(2, 112, 112);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0 pxTorem(10px);
+            border-radius: pxTorem(5px);
+            span {
+                font-size: pxTorem(14px);
+            }
+            .ipt {
+                margin-left: pxTorem(10px);
+                color: #eee
+            }
+        }
+        dl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            dt {
+                font-size: pxTorem(14px)
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: pxTorem(100px);
+        img {
+            width: 100%;
+            height: pxTorem(100px);
+        }
+    }
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background: #eee;
+        .swipers,
+        .swiper-container,
+        .swiper-wrapper {
+            width: 100%;
+            height: pxTorem(200px);
+            border: 1px solid #ccc;
+            background: #fff;
+            .first-slide {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                dl {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: pxTorem(6px);
+                    dt {
+                        font-size: pxTorem(50px)
+                    }
+                    dd {
+                        font-size: pxTorem(14px)
+                    }
+                }
+            }
+        }
+        .product {
+            width: 100%;
+            flex: 1;
+            background: #fff;
+            margin-top: pxTorem(15px);
+            padding-left: pxTorem(10px);
+            h4 {
+                font-size: pxTorem(18px);
+                padding: pxTorem(10px) pxTorem(10px) pxTorem(10px) 0
+            }
+            dl {
+                width: 100%;
+                height: pxTorem(120px);
+                border: 1px solid #ccc;
+                dt {}
+            }
+        }
+    }
 }
