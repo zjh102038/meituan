@@ -66,7 +66,7 @@ body {
         flex: 1;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        //overflow: hidden;
         background: #eee;
         .swipers,
         .swiper-container,
@@ -110,7 +110,39 @@ body {
                 width: 100%;
                 height: pxTorem(120px);
                 border: 1px solid #ccc;
-                dt {}
+                border-left: none;
+                padding: pxTorem(10px);
+                dt {
+                    height: 100%;
+                    float: left;
+                    img {
+                        height: 100%;
+                    }
+                }
+                dd {
+                    float: left;
+                    padding-left: pxTorem(10px);
+                    line-height: pxTorem(35px);
+                    h6 {
+                        width: 100%;
+                        font-size: pxTorem(16px)
+                    }
+                    span {
+                        font-size: pxTorem(12px)
+                    }
+                    p {
+                        font-size: pxTorem(12px);
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            font-size: pxTorem(13px);
+                            b {
+                                color: darkcyan;
+                                font-size: pxTorem(16px)
+                            }
+                        }
+                    }
+                }
             }
         }
     }
