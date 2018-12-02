@@ -149,7 +149,11 @@
         </main>
     </div>
     <script>
-        var swipers = new Swiper('.swiper-container', {})
+        var swipers = new Swiper('.swiper-container', {
+            pagination: {
+                clickable: true
+            }
+        })
         var xhr = new XMLHttpRequest()
         xhr.open('get', '/data', true)
         xhr.onload = function(res) {
